@@ -18,4 +18,90 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--color-1);
+}
+
+.content{
+    width: 65%;
+    height: 80%;
+    background: #fff;
+    padding: 20px;
+    display: flex;
+}
+
+.content .content__container{
+    width: 50%;
+}
+
+.content .content__container img{
+    width: 100%;
+}
+h3.form-title{
+    font-size: 24px;
+    color: var(--color-4);
+}
+
+.content .content__container form .form-group{
+    display: grid;
+    padding: 10px;
+}
+
+.content .content__container form .form-group label{
+    font-size: 12px;
+    font-weight: 600;
+    opacity: .4;
+    margin-bottom: 10px;
+}
+
+.content .content__container form .form-group input{
+    width: 90%;
+    height: 50px;
+    padding: 10px;
+    background-color: var(--color-1);
+    border-radius: 5px;
+    border: var(--color-1) solid 1px;
+}
+
+.content .content__container form .form-group input:focus{
+    outline: none;
+}
+
+.content .content__container form .form-group input::placeholder{
+    opacity: .2;
+}
+
+.content .content__container form .form-group-inline{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 7px;
+}
+
+.btn{
+    width: 100px;
+    color: var(--color-4);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 5px;
+    background: none;
+    border: none;
+}
+
+.btn-active{
+    background-color: var(--color-4);
+    color: #fff;
+}
+
+.content .content__container form .form-group-inline a{
+    text-decoration: none;
+    color: var(--color-4);
 }
